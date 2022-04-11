@@ -8,15 +8,7 @@ export default class Dwarf extends Race {
     super(nameDwarf, dexterityDwarf);
     this._maxLifePoints = 80;
   }
-  
-  public get name() {
-    return super.name;
-  }
 
-  public get dexterity() {
-    return super.dexterity;
-  }
-  
   public static createdRacesInstances(): number {
     Dwarf._instancesCounter += 1;
     return Dwarf._instancesCounter;

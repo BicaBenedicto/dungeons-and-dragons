@@ -8,15 +8,7 @@ export default class Halfling extends Race {
     super(nameHalfling, dexterityHalfling);
     this._maxLifePoints = 60;
   }
-  
-  public get name() {
-    return super.name;
-  }
 
-  public get dexterity() {
-    return super.dexterity;
-  }
-  
   public static createdRacesInstances(): number {
     Halfling._instancesCounter += 1;
     return this._instancesCounter;

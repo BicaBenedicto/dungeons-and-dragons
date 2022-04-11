@@ -8,15 +8,7 @@ export default class Orc extends Race {
     super(nameOrc, dexterityOrc);
     this._maxLifePoints = 74;
   }
-  
-  public get name() {
-    return super.name;
-  }
 
-  public get dexterity() {
-    return super.dexterity;
-  }
-  
   public static createdRacesInstances(): number {
     Orc._instancesCounter += 1;
     return this._instancesCounter;

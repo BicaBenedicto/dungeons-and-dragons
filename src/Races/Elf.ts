@@ -8,15 +8,7 @@ export default class Elf extends Race {
     super(nameElf, dexterityElf);
     this._maxLifePoints = 99;
   }
-  
-  public get name() {
-    return super.name;
-  }
 
-  public get dexterity() {
-    return super.dexterity;
-  }
-  
   public static createdRacesInstances(): number {
     Elf._instancesCounter += 1;
     return this._instancesCounter;
