@@ -11,7 +11,7 @@ export default class Dwarf extends Race {
 
   public static createdRacesInstances(): number {
     Dwarf._instancesCounter += 1;
-    return Dwarf._instancesCounter;
+    return this._instancesCounter;
   }
 
   public get maxLifePoints(): number {
